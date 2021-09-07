@@ -10,7 +10,13 @@ export const Container = styled.div`
 export const LogoImg = styled.img`
     width: 40px;
     height: 40px;
+    border-radius:50%;
     object-fit: cover;
+    transition: all .3s;
+    border: 1px dashed ${props => props.theme.colors.white};
+    &:hover{
+        transform: scale(1.2);
+    }
 `;
 export const Title = styled.h3`
     color: ${props => props.theme.colors.white};

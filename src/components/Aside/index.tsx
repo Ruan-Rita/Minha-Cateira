@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Header, LogoImg, MenuContainer , MenuItemLink, Title } from "./styles";
-import logoSVG from "../../../public/assets/logo.svg"
 import {
     MdDashboard,
     MdArrowUpward,
@@ -17,10 +16,10 @@ const Aside : React.FC = () => {
                     <Title>Minha Carteira</Title>
                 </Header>
                 <MenuContainer>
-                    <MenuItemLink href="#"><MdDashboard/>Dashboad</MenuItemLink>
-                    <MenuItemLink href="#"><MdArrowUpward/>Entrada</MenuItemLink>
-                    <MenuItemLink href="#"><MdArrowDownward/>Saída</MenuItemLink>
-                    <MenuItemLink href="#"><MdExitToApp/>Sair</MenuItemLink>
+                    <MenuItemLink href="/dashboard"><MdDashboard/>Dashboad</MenuItemLink>
+                    <MenuItemLink href="/list/input"><MdArrowUpward/>Entrada</MenuItemLink>
+                    <MenuItemLink href="/list/output"><MdArrowDownward/>Saída</MenuItemLink>
+                    <MenuItemLink href="/exit"><MdExitToApp/>Sair</MenuItemLink>
                 </MenuContainer>
             </Container>
         </>
