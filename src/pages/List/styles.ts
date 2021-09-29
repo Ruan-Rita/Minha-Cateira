@@ -21,6 +21,7 @@ export const Filters = styled.div`
         margin: 0px 10px;
         transition: opacity .3s;
         margin-bottom: 30px;
+        opacity: .3;
         &:hover{
             opacity: .7;
         }
@@ -30,14 +31,17 @@ export const Filters = styled.div`
             display: block;
             width: 55px;
             margin: 0 auto;
-            border-bottom: 10px solid ${props => props.theme.colors.warning};
+            border-bottom: 10px solid ${props => props.theme.colors.success};
         }
         &.tag-filters-eventual::after{
             content: '';
             display: block;
             width: 55px;
             margin: 0 auto;
-            border-bottom: 10px solid ${props => props.theme.colors.success};
+            border-bottom: 10px solid ${props => props.theme.colors.warning};
+        }
+        &.tag-actived{
+            opacity: 1 ;
         }
     }
     
